@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>JavaScript Exercises</title>
+	<!--原本的<script>
+        var data = "Global Data";
+        function Button1_onclick() {
+            var data = "local data"
+            txt1.value = window.data;
+            txt2.value = data;
+        }
+    </script>-->
+    <!--110<script>
+        function Button1_onclick() {
+
+            var userName = txt1.value;
+            userName = "Hello!" + userName;
+            txt2.value = userName;
+        }
+    </script>-->
+    <!--120需要詢問<script>
+        var data = "Global Data";
+
+        function Button1_onclick() {
+            var data = "local data";
+            txt1.value = window.data;
+            txt2.value = data;
+        }
+    </script>-->
+    <!--130<script>
+        function Button1_onclick() {
+            var nTest;
+            // nTest = new Number("122.5") + 1  // A
+            // nTest = new Number(122.5) + 1  // B
+            // nTest = 122.5 + 1  // C
+            //nTest = "122.5" + 1  // D
+
+            txt2.value = nTest;
+        }
+    </script> -->
+   <!-- <script>
+        function Button1_onclick() {
+           var x = 0.1;
+           var y = 0.2;
+           txt1.value = x + y;
+           txt2.value = (x * 10000 + y * 10000) / 10000;
+        }
+    </script>-->
+    <!--為什麼321不行<script>
+        function Button1_onclick() {
+            var s = "0123456789中的文字";
+            var position = s.indexOf("201")
+            if (position >= 0) {
+                txt1.value = "found";
+            }
+            else {
+                txt1.value = "not found";
+            }
+        }
+    </script>-->
+
+</head>
+<body>
+    txt1:
+    <input type="text" id="txt1" name="txt1" value="World" Placeholder="Keyin something" size="40">
+    <br><br>
+    <input type="button" id="Botton1" name="Buttom1" 
+           value="2.點我一下，執行JavaScript" onclick="Button1_onclick()">
+    <br><br>
+    txt2:
+    <input type="text" id="txt2" name="txt2" value="Result" size="40">
+    <br>
+    <div id="debug"></div>
+</body>
+</html>
